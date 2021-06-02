@@ -1,9 +1,13 @@
 # WebAutoTest
 Web automation and testing
 
-DEPENDENCIES: Use the script in the dependencies folder to get everything needed to run it. Deps are:
+DEPENDENCIES: USE the script in the dependencies folder to get everything needed to run it. Deps are:
 
--python 3.x -pip3 -selenium (installed through pip)
+-python 3.x 
+-pip3 
+-selenium (installed through pip)
+-chromedriver
+-google-chrome-stable
 
 TO RUN:
 

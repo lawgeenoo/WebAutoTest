@@ -27,8 +27,8 @@ class Test_2_ValidateLinks(unittest.TestCase):
         def test_step2_popularRent(self):
             self.assertEqual(testScripts.select_popular_rent(driver), 1)
         
-        def test_step3_popularRent(self):
-            self.assertEqual(testScripts.locate_validateDubaiApartments_links(driver), 1)
+        def test_step3_popularRent_verifyLinks(self):
+            self.assertEqual(testScripts.locate_validateDubaiApartments_links(driver, timeout_wait), 1)
     
 
         
@@ -38,6 +38,7 @@ class Test_2_ValidateLinks(unittest.TestCase):
 driver = webdriver.Chrome("/usr/bin/chromedriver") 
 website = 'https://bayut.com'
 area_of_interest = 'Dubai Marina'  
+timeout_wait = 5 #global timeout wait time
 
 if __name__ == '__main__':
     

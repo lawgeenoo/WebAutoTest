@@ -1,5 +1,3 @@
-from selenium import webdriver
-from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
@@ -102,12 +100,12 @@ def select_popular_rent(driver):
         return 0
 
 
-def locate_validateDubaiApartments_links(driver):
+def locate_validateDubaiApartments_links(driver, timeout):
    
    list_of_links = []
    list_of_loaded_pages = []
    list_of_failed_pages = []
-   timeout = 5 # 5 seconds - wait time for page to find _1e33cd36 
+   
    
    elems = driver.find_elements_by_xpath("//a[contains(@href, '/to-rent/apartments/dubai/')]") #find all the href elements containing the substring
    

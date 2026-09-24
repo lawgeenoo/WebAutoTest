@@ -1,4 +1,4 @@
-# WebAutoTest
+# WebAutoTest (old, did this as take-home project years ago)
 Web automation and testing
 
 DEPENDENCIES: USE the script in the dependencies folder to get everything needed to run it. Deps are:
